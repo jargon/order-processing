@@ -40,14 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DecisionContext.cs" />
-    <Compile Include="Order.cs" />
+    <Compile Include="Agent.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Products\Book.cs" />
     <Compile Include="Products\Membership.cs" />
     <Compile Include="Products\Product.cs" />
-    <Compile Include="Products\ProductType.cs" />
     <Compile Include="Products\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ICommissionService.cs" />
+    <Compile Include="Services\IEmailSender.cs" />
+    <Compile Include="Services\IMembershipActivator.cs" />
+    <Compile Include="Services\IPackingSlipGenerator.cs" />
+    <Compile Include="Services\IPaymentReceiver.cs" />
+    <Compile Include="Services\IProductFinder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,65 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="OrderProcessingModule.Activity1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:oa="clr-namespace:OrderProcessing.Activities;assembly=OrderProcessingActivitives"
+ xmlns:od="clr-namespace:OrderProcessing.Domain;assembly=DomainModel"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="payment" Type="InArgument(od:Payment)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>OrderProcessingModule.Activity1_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>OrderProcessing.Domain</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities.Presentation</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Http</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>DomainModel</AssemblyReference>
+      <AssemblyReference>OrderProcessingActivitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>OrderProcessingModule</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <oa:GeneratePackingSlipForShipping sap2010:WorkflowViewState.IdRef="GeneratePackingSlipForShipping_1">
+    <oa:GeneratePackingSlipForShipping.Payment>
+      <InArgument x:TypeArguments="od:Payment">
+        <mca:CSharpValue x:TypeArguments="od:Payment">payment</mca:CSharpValue>
+      </InArgument>
+    </oa:GeneratePackingSlipForShipping.Payment>
+    <sads:DebugSymbol.Symbol>d1NDOlxVc2Vyc1xzYm9pc2VuXGNvZGVcT3JkZXJQcm9jZXNzaW5nTW9kdWxlXE9yZGVyUHJvY2Vzc2luZ01vZHVsZVxBY3Rpdml0eVRlc3QueGFtbAIzAzonAgEBNgk2UAIBAg==</sads:DebugSymbol.Symbol>
+  </oa:GeneratePackingSlipForShipping>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="GeneratePackingSlipForShipping_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="OrderProcessingModule.Activity1_1" sap:VirtualizedContainerService.HintSize="240,102" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
